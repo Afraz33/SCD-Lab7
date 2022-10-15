@@ -26,6 +26,22 @@ mongoose.connection.on("connected", () => {
   console.log("mongoDB connected!");
 });
 
+app.get("/",function(req,res){
+
+  res.send("Hello World");
+
+ 
+
+})
+
+app.post("/",function(req,res){
+
+  res.send("Hello World");
+
+ 
+
+})
+
 app.listen(3000, () => {
   connect();
   console.log("Server is running on port 3000")
